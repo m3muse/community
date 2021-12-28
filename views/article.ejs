@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./components/HEAD.ejs")%>
+    <title>Code:Me Article</title>
+  </head>
+  <body>
+    <%- include("./components/NAVBAR.ejs") %>
+    <div class="container">
+      <div>
+        <%- include("./components/POST.ejs")%>
+        <div><%=data.content%></div>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>

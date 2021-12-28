@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./components/HEAD.ejs")%>
+    <title>Code:Me COMMUNITY</title>
+  </head>
+  <body>
+    <%- include("./components/NAVBAR.ejs") %>
+    <div class="container">
+      <h2>Community</h2>
+      <div>sort by : New Popular</div>
+      <ul class="articleWrapper">
+        <%locals.datas.forEach((data)=>{ %>
+        <%-include("./components/POST.ejs",{data})%> <%})%>
+      </ul>
+      <div class="pageNation">
+        1 2 3 4 <%if(locals.isLoggedIn===true){%>
+        <a href="/community/writeArticle"><button>Write a Post</button></a>
+        <%}else{%>
+        <a href="/user/login"><button>Write a Post</button></a>
+        <%}%>
+      </div>
+    </div>
+  </body>
+</html>

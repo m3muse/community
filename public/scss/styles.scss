@@ -1,0 +1,20 @@
+/* VAR */
+$primary: blue;
+
+/* ALL */
+@import './reset.scss';
+.flash-error {
+  color: red;
+  font-weight: bolder;
+}
+
+/* COMPONENTS */
+@import './components/NAVBAR.scss';
+
+/* PAGES */
+
+@import './join.scss';
+@import './profile.scss';
+@import './community.scss';
+@import './writeArticle.scss';
+@import './editProfile.scss';
